@@ -6,3 +6,5 @@ add_executable(hello ${SRC_HELLO})
 
 set(SRC fork.c)
 add_executable(${PROJECT_NAME} ${SRC})
+
+set(ALL_TARGETS ${ALL_TARGETS} ${PROJECT_NAME} PARENT_SCOPE)

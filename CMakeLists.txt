@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.29.8)
 project(system_program)
 
+set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/toolchain/toolchain.cmake)
+set(ALL_TARGETS "")
+
 add_subdirectory(01)
 add_subdirectory(02)
 add_subdirectory(03)
@@ -27,3 +30,8 @@ add_subdirectory(23)
 add_subdirectory(24)
 add_subdirectory(25)
 add_subdirectory(26)
+
+install(
+    TARGETS ${ALL_TARGETS}
+    DESTINATION /home/rlk/tftp
+)

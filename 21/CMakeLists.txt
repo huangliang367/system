@@ -12,3 +12,5 @@ add_executable(raise ${SRC_RAISE})
 
 set(SRC_TEST test.c)
 add_executable(test ${SRC_TEST})
+
+set(ALL_TARGETS ${ALL_TARGETS} alarm kill raise test PARENT_SCOPE)

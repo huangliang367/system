@@ -14,7 +14,8 @@
         "binaryDir": "${sourceDir}/build/debug",
         "cacheVariables": {
             "CMAKE_BUILD_TYPE": "Debug",
-            "TEST_VAL" : "TEST"
+            "TEST_VAL" : "TEST",
+            "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/toolchain/toolchain.cmake"
         }
       }
     ]

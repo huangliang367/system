@@ -3,3 +3,5 @@ project(prj_fork)
 
 set(SRC fork.c)
 add_executable(${PROJECT_NAME} ${SRC})
+
+set(ALL_TARGETS ${ALL_TARGETS} ${PROJECT_NAME} PARENT_SCOPE)

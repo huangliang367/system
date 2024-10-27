@@ -3,3 +3,5 @@ project(prj_pipe)
 
 set(SRC_PIPE pipe.c)
 add_executable(${PROJECT_NAME} ${SRC_PIPE})
+
+set(ALL_TARGETS ${ALL_TARGETS} ${PROJECT_NAME} PARENT_SCOPE)

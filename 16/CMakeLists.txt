@@ -6,3 +6,5 @@ add_executable(fork ${SRC_FORK})
 
 set(SRC_FORK2 fork2.c)
 add_executable(fork2 ${SRC_FORK2})
+
+set(ALL_TARGETS ${ALL_TARGETS} ${PROJECT_NAME} PARENT_SCOPE)

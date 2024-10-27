@@ -9,3 +9,5 @@ add_executable(sleep ${SRC_SLEEP})
 
 set(SRC_WHILE while.c)
 add_executable(while ${SRC_WHILE})
+
+set(ALL_TARGETS ${ALL_TARGETS} pause sleep while PARENT_SCOPE)

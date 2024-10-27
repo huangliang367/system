@@ -6,3 +6,5 @@ add_executable(msg1 ${SRC_MSG1})
 
 set(SRC_MSG2 b.c)
 add_executable(msg2 ${SRC_MSG2})
+
+set(ALL_TARGETS ${ALL_TARGETS} msg1 msg2 PARENT_SCOPE)
